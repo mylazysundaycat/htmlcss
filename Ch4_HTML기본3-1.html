@@ -1,0 +1,46 @@
+<!-- 
+    get 방식
+    도메인 정보가 주소 뒤에 붙어서 가는 방식
+    post 방식
+    정보가 헤더에 암호화되어 가는 방식
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+    <title>Title</title>
+</head> 
+<body>
+    <form action="#" method="get">
+        이름 <input type="text" name="uname"/><br/>
+        아이디 <input type="text" name="uid"/><br/>
+        비밀번호 <input type="password" name="upw"/><br/>
+        연락처 <input type="text" name="uphone1" size="5"/>-<input type="text" name="uphone2" size="5"/>-<input type="text" name="uphone3" size="5"/>
+        사진 <input type="file" name="upic" ><br/>
+        성별 <input type="radio" name="gender" value="m">남<input type="radio" name="gender" value="w">여<br/>
+        사용언어<input type="checkbox" name="lan" value="kor" checked="checked"/>한글
+        <input type="checkbox" name="lan" value="en" checked="checked"/>영어
+        <input type="checkbox" name="lan" value="jap" checked="checked"/>일어
+        <input type="checkbox" name="lan" value="chi" checked="checked"/>중국어<br/>
+        자기소개 <textarea rows="5" cols="20">간단히 입력하시오</textarea><br/>
+        국적<select>
+                <option>Korea</option>
+                <option>Usa</option>
+                <option>Japen</option>
+                <option>China</option>
+            </select>
+        좋아하는 음식
+            <select multiple="multiple">
+                <option>김치</option>
+                <option>파전</option>
+                <option>비빔밥</option>
+                <option>치킨</option>
+            </select>
+        <input type="submit"/>
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!-- 
+    id와 클래스
+    태그의 id와 class를 이용하여 css에서 속성을 설정할 수있다.
+    id #
+    class .
+ -->
+
+<!DOCTYPE html>
+ <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta charset="utf-8"/>
+     <title>Title</title>
+     <style>
+        #header1 {
+            background: #ffd800;
+        }
+        #wrap1 {
+            background: #f1e6a8;
+            overflow: hidden;
+        }
+        ul li.li1{ 
+            width: 500px;
+            background: #6ef677;
+        }
+        #c1{
+            float: left;
+        }
+        #c2{
+            float: left;
+        }
+        /* 
+        후손 선택자
+        div li {
+            div안에 있는 모든 li를 선택
+        }
+        자손 선택자
+        div > h1 {
+            div안에 바로 밑에있는 h1만을 선택
+        }
+        */
+     </style>
+ </head> 
+ <body>
+    <div id ="header1">
+        <h1>Homepage</h1>
+        <hr/>
+    </div>
+
+    <div id ="wrap1">
+        <div id="c1">
+           <h1>Contents</h1>
+                <ul>
+                    <li class="li1">menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                </ul>
+                <hr/>
+        </div>
+        <div id="c2">
+            <h1>Banner</h1>
+        </div>
+    </div>
+
+    <div id="footer1">
+        <p>op.gg</p>
+    </div>
+
+ </body>
+ 
+ </html>

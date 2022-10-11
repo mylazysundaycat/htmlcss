@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta charset="utf-8"/>
+     <title>Title</title>
+     <style>
+        h1~div{
+            font-size:10px;
+            color:red;
+        }
+        /* h1과 동등한 위치에 있는 div 모두에 적용 */
+        h1+div{
+            font-size:20px;
+            color:blue;
+        /* h1과 가장 근접한 div에 적용 */
+     </style>
+ </head> 
+ <body>
+
+    <h1 id="title">동위 선택자(+,~)</h1>
+    <div>div1</div>
+    <div>div2</div>
+    <div>div3</div>
+    <div>div4</div>
+    <div>div5</div>
+
+ </body>
+ 
+ </html>
