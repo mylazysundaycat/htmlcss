@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ 
+ <head>
+ <meta charset="utf-8"/>
+     <title>Title</title>
+     <style>
+        .h-container:after{ clear: both; display: block; content: '' }
+        .h-container .item {
+            float: left;
+            width: 100px;
+            text-align: center;
+            border-right: 1px solid #ddd;
+        }
+        .h-container .item.last {
+            float: right;
+            border-right: none;
+        }
+        </style>
+ </head> 
+
+
+ <body>
+   <div class="h-container">
+	<div class="item">menu 1</div>
+	<div class="item">menu 2</div>
+	<div class="item">menu 3</div>
+	<div class="item last">login</div>
+</div>
+ </body>
+
+
+ </html>
