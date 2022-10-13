@@ -5,27 +5,30 @@
  <meta charset="utf-8"/>
      <title>Title</title>
      <style>
-        .h-container:after{ clear: both; display: block; content: '' }
-        .h-container .item {
-            float: left;
-            width: 100px;
-            text-align: center;
-            border-right: 1px solid #ddd;
+        .container {
+            display: flex;
+            background-color: rgb(238, 218, 239);
+            padding: 1%;
         }
-        .h-container .item.last {
-            float: right;
-            border-right: none;
+        .item{
+            flex:none;
+            padding: 10px;
         }
+        .login{
+            margin-left: auto;
+            padding: 10px;
+        }
+        
         </style>
  </head> 
 
 
  <body>
-   <div class="h-container">
+   <div class="container">
 	<div class="item">menu 1</div>
 	<div class="item">menu 2</div>
 	<div class="item">menu 3</div>
-	<div class="item last">login</div>
+	<div class="login">login</div>
 </div>
  </body>
 
